@@ -42,6 +42,16 @@ Layout baut daraus den Link auf die andere Sprache. Die Landing Pages verlinken 
       Hintergrund der Schritt-Animation. Fehlt die Datei, bleibt ein gestreifter Platzhalter
       stehen, die Seite bleibt heil.
 
+## Herkunft
+
+Die Landing Page entstand als Entwurf in Claude Design (Projekt "Maxi test", privat:
+<https://claude.ai/design/p/9323d520-be86-4f2f-a618-0da0c9a8cb79>) und wurde von dort in dieses
+Repo überführt. **Maßgeblich ist ab jetzt dieses Repo** - der Entwurf wird nicht mitgepflegt und
+divergiert mit jeder Änderung hier weiter.
+
+Vorgänger-Repo `stillmadmax/potd-privacy` (nur Datenschutz, Support, Impressum) ist am
+2026-08-09 hier aufgegangen und gelöscht worden; die alten URLs sind bewusst tot.
+
 ## Lokal ansehen
 
 Die Landing Pages laufen ohne Buildschritt, `index.html` im Browser öffnen genügt. Für die
