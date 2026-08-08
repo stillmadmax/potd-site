@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'de' }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title | default: site.title }}</title>
+<meta name="description" content="{{ site.description }}">
+<meta name="robots" content="index, follow">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1c1c1e;
+    --muted: #6b6b70;
+    --rule: #e2e2e6;
+    --link: #0b62c4;
+    --code-bg: #f4f4f6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16171a;
+      --fg: #e8e8ea;
+      --muted: #a0a0a6;
+      --rule: #33343a;
+      --link: #6aa9f0;
+      --code-bg: #212227;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2.5rem 1.25rem 5rem;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+    /* Lange URLs (z. B. die verlinkten Datenschutzbestimmungen) duerfen die
+       Seite auf dem iPhone nicht breiter machen als den Viewport. */
+    overflow-wrap: break-word;
+  }
+  /* Nur Links umbrechen - Domainnamen in <code> bleiben am Stueck lesbar,
+     dafuer scrollt die Tabelle in ihrem Container. */
+  a { overflow-wrap: anywhere; }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .4rem; letter-spacing: -.01em; }
+  h2 { font-size: 1.3rem; margin: 2.4rem 0 .7rem; padding-top: 1.1rem; border-top: 1px solid var(--rule); }
+  h3 { font-size: 1.08rem; margin: 1.8rem 0 .5rem; }
+  p, li { margin: .7rem 0; }
+  a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+  em { color: var(--muted); }
+  code {
+    background: var(--code-bg);
+    padding: .12em .35em;
+    border-radius: 4px;
+    font-size: .88em;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  /* Breite Tabellen duerfen scrollen, die Seite selbst nie. */
+  .table-scroll { overflow-x: auto; margin: 1.2rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .93rem; }
+  th, td { border: 1px solid var(--rule); padding: .5rem .65rem; text-align: left; vertical-align: top; }
+  th { background: var(--code-bg); font-weight: 600; }
+  address { font-style: normal; }
+  footer { margin-top: 3.5rem; padding-top: 1.1rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .88rem; }
+</style>
+</head>
+<body>
+<main>
+{{ content }}
+<footer>
+{% if page.lang == 'en' %}
+<a href="https://stillmadmax.github.io/potd-site/en/">Pic of the Day</a> &middot;
+<a href="https://stillmadmax.github.io/potd-site/en/privacy">Privacy</a> &middot;
+<a href="https://stillmadmax.github.io/potd-site/en/support">Support</a> &middot;
+<a href="https://stillmadmax.github.io/potd-site/en/imprint">Legal notice</a>
+{% else %}
+<a href="https://stillmadmax.github.io/potd-site/">Pic of the Day</a> &middot;
+<a href="https://stillmadmax.github.io/potd-site/datenschutz">Datenschutz</a> &middot;
+<a href="https://stillmadmax.github.io/potd-site/support">Support</a> &middot;
+<a href="https://stillmadmax.github.io/potd-site/impressum">Impressum</a>
+{% endif %}
+{% if page.alt_url %}<br><a href="{{ page.alt_url }}">{{ page.alt_label }}</a>{% endif %}
+</footer>
+</main>
+<script>
+  // Tabellen in einen scrollbaren Container huellen, damit auf dem iPhone
+  // nicht die ganze Seite horizontal scrollt.
+  document.querySelectorAll('table').forEach(function (t) {
+    var box = document.createElement('div');
+    box.className = 'table-scroll';
+    t.parentNode.insertBefore(box, t);
+    box.appendChild(t);
+  });
+</script>
+</body>
+</html>

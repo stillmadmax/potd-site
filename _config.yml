@@ -1,0 +1,14 @@
+title: Pic of the Day
+description: Pic of the Day - die iPhone-App, die Fotos mit Ort, Datum und Wetter beschriftet
+lang: de
+
+# Die Landing Pages sind statisches HTML und werden unveraendert durchgereicht.
+# Nur die Textseiten (Datenschutz, Support, Impressum) nutzen das Jekyll-Layout.
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md
