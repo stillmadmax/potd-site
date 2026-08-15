@@ -40,7 +40,7 @@ Layout baut daraus den Link auf die andere Sprache. Die Landing Pages verlinken 
   (App auf Deutsch bzw. Englisch), laufen als stummer Loop in der Drei-Schritte-Sektion.
   Aus `~/personal/apps/potd_images/potd_flow{,_en}.MP4` mit ffmpeg erzeugt: Statusleiste
   abgeschnitten, Foto-Picker geblurrt (bis auf die gewählte Kachel oben links), Schnitt
-  beim "Gesichert"/"Saved"-Popup (der Mediathek-Teil dahinter ist raus), danach 2 s das
+  beim "Gesichert"/"Saved"-Popup (der Mediathek-Teil dahinter ist raus), danach 4 s das
   fertige Bild (`finished_{de,en}.JPEG`) als Standbild; 810px, 30 fps, ohne Ton.
 
 ## Offene Punkte
