@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pic of the Day - photos that caption themselves</title>
 <meta name="description" content="Pic of the Day writes place, date, weather and altitude from your photo's metadata into the image. Free, no account, your photos stay on your iPhone.">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
 <link rel="canonical" href="https://stillmadmax.github.io/potd-site/en/">
 <link rel="alternate" hreflang="de" href="https://stillmadmax.github.io/potd-site/">
 <link rel="alternate" hreflang="en" href="https://stillmadmax.github.io/potd-site/en/">
@@ -13,7 +13,7 @@
 <meta property="og:title" content="Pic of the Day - photos that caption themselves">
 <meta property="og:description" content="Place, date, weather and altitude from your photo's metadata, set as text into the image. Free, no account, no upload.">
 <meta property="og:url" content="https://stillmadmax.github.io/potd-site/en/">
-<meta property="og:image" content="https://stillmadmax.github.io/potd-site/assets/img/app-hauptbildschirm.jpg">
+<meta property="og:image" content="https://stillmadmax.github.io/potd-site/assets/img/hero-en.jpg">
 <meta property="og:locale" content="en_GB">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="../assets/css/fonts.css">
@@ -24,7 +24,7 @@
 
 <div class="wrap nav">
   <a class="mark" href="./">
-    <span class="mark-dot"></span>
+    <img class="mark-dot" src="../assets/img/app-icon.png" alt="" width="96" height="96">
     <span>Pic of the Day</span>
   </a>
   <nav class="nav-links" aria-label="Main navigation">
@@ -33,7 +33,7 @@
       <a href="../" lang="de" hreflang="de">DE</a>
       <a href="./" aria-current="page" lang="en">EN</a>
     </div>
-    <a class="btn btn-ghost" href="#">App Store</a>
+    <a class="btn btn-ghost" href="https://apps.apple.com/us/app/potd-pic-of-the-day/id6780421556">App Store</a>
   </nav>
 </div>
 
@@ -49,18 +49,23 @@
     </p>
   </div>
   <div class="phone">
-    <img class="shot" src="../assets/img/app-hauptbildschirm.jpg" width="755" height="1400"
-         alt="POTD main screen: a photo taken in Antwerp, captioned with place, date, temperature and altitude">
+    <img class="shot" src="../assets/img/hero-en.jpg" width="760" height="1557"
+         alt="POTD main screen: a mountain lake photo captioned with peak, altitude, date and weather">
   </div>
   <div class="hero-extra">
     <div class="sample">
-      <p class="sample-label">How the text lands in the photo</p>
-      <span class="sample-line">Antwerp, BE</span>
-      <span class="sample-line">12 May 2026, 10 °C,</span>
-      <span class="sample-line">6 m above sea level, light drizzle</span>
+      <p class="sample-label">The app writes this - you type nothing</p>
+      <span class="sample-line">Lisbon (PT), 28 m a.s.l.</span>
+      <span class="sample-src">from GPS and elevation data</span>
+      <span class="sample-line">October 3, 2026, 6:41 PM,</span>
+      <span class="sample-src">from the photo's metadata</span>
+      <span class="sample-line">24 °C, golden hour</span>
+      <span class="sample-src">weather at capture time</span>
     </div>
     <div class="cta-row">
-      <a class="btn" href="#">Download on the App Store</a>
+      <a class="store-badge" href="https://apps.apple.com/us/app/potd-pic-of-the-day/id6780421556">
+        <img src="../assets/img/app-store-badge-en.svg" alt="Download on the App Store" width="120" height="40">
+      </a>
       <p class="cta-note">
         Free, no ads, no account.<br>
         iPhone, iOS 17 and up.
@@ -70,7 +75,7 @@
 </header>
 
 <section class="wrap">
-  <h2 class="serif section-head">Three steps and the photo is done.</h2>
+  <h2 class="serif section-head">Your captioned photo in ten seconds.</h2>
   <div class="demo">
     <div class="steps">
       <div class="step">
@@ -89,36 +94,29 @@
         <p>The captioned image lands as a new photo in your library.</p>
       </div>
     </div>
-    <div class="demo-phone" role="img"
-         aria-label="Animation: a photo is captioned line by line with place, date and weather, then saved as a new photo.">
-      <div class="demo-screen">
-        <span class="demo-hint">your photo</span>
-        <div class="demo-caption">
-          <span class="demo-line">Antwerp, BE</span>
-          <span class="demo-line">12 May 2026, 10 °C,</span>
-          <span class="demo-line">6 m above sea level, light drizzle</span>
-        </div>
-        <div class="demo-toast">Saved as a new photo</div>
-      </div>
+    <div class="demo-phone">
+      <video class="demo-video" src="../assets/video/potd-flow-en.mp4" autoplay muted loop playsinline
+             width="810" height="1642"
+             aria-label="Screen recording: a photo is picked from the library, the template fills in place, date and weather, and the finished image is saved."></video>
     </div>
   </div>
 </section>
 
 <section class="wrap" id="features">
-  <h2 class="serif section-head">What the app fills in for you.</h2>
+  <h2 class="serif section-head">What the app takes off your plate.</h2>
   <div class="features">
     <div class="card">
       <h3 class="serif">Templates instead of typing</h3>
       <p>
         Write the text once with placeholders, then the app fills it in again for every photo.
-        80 fields are ready to use: address, weather at the time of capture, camera data, moon
-        phase, nearest peak.
+        79 fields are ready to use: address, weather at the time of capture, camera data, moon
+        phase, nearest peak and plenty more.
       </p>
     </div>
     <div class="card">
       <h3 class="serif">Styles that stay put</h3>
       <p>
-        A style you set up once and never touch again. 135 fonts and 23 backdrop shapes are
+        A style you set up once and never touch again. 135 fonts and 22 backdrop shapes are
         included, all of it offline on the device.
       </p>
     </div>
@@ -136,6 +134,16 @@
         The preview is the result, pixel for pixel.
       </p>
     </div>
+  </div>
+  <div class="gallery" aria-label="More glimpses of the app">
+    <img src="../assets/img/store-02-en.jpg" width="660" height="1434" loading="lazy"
+         alt="App Store image: 79 variables, all filled in automatically - the template's variable catalogue">
+    <img src="../assets/img/store-05-en.jpg" width="660" height="1434" loading="lazy"
+         alt="App Store image: 22 shapes for the text backdrop - the shape menu in the style editor">
+    <img src="../assets/img/store-06-en.jpg" width="660" height="1434" loading="lazy"
+         alt="App Store image: put the text wherever you want - the fullscreen editor with grid">
+    <img src="../assets/img/store-07-en.jpg" width="660" height="1434" loading="lazy"
+         alt="App Store image: light and dark, always readable - the main screen in dark mode">
   </div>
 </section>
 
@@ -168,11 +176,24 @@
 
 <section class="wrap closing">
   <h2 class="serif">Ready for your first captioned photo?</h2>
-  <a class="btn" href="#">Download on the App Store</a>
+  <a class="store-badge" href="https://apps.apple.com/us/app/potd-pic-of-the-day/id6780421556">
+    <img src="../assets/img/app-store-badge-en.svg" alt="Download on the App Store" width="120" height="40">
+  </a>
   <p class="cta-note">Free, no ads, no account. iPhone, iOS 17 and up.</p>
 </section>
 
 </main>
+
+<script>
+  /* Accessibility: don't auto-loop the video for users who prefer reduced motion */
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    document.querySelectorAll(".demo-video").forEach(function (v) {
+      v.removeAttribute("autoplay");
+      v.pause();
+      v.controls = true;
+    });
+  }
+</script>
 
 <footer class="wrap foot">
   <div>Pic of the Day. A project by Maximilian Schell.</div>

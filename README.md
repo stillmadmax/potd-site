@@ -29,18 +29,34 @@ Layout baut daraus den Link auf die andere Sprache. Die Landing Pages verlinken 
   müssen beim Ausliefern mitgehen.
 - `assets/css/site.css` - Farben und Abstände spiegeln das "Quiet Studio"-Theme der App
   (`AppTheme` in `potd/ModernDesign.swift`).
-- `assets/img/app-hauptbildschirm.jpg` - Screenshot für den Hero.
+- `assets/img/hero-de.jpg` / `hero-en.jpg` - Hero-Bild: der rohe Hauptbildschirm-Screenshot
+  (DE: `~/personal/apps/potd_images/IMG_2479.jpg`; EN: `potd_en/IMG_2491.PNG` mit
+  abgeschnittener Statusleiste), auf 760px verkleinert und per CSS als Karte gerundet
+  (32px, mobil 28px) mit blauem Schatten. Frühere Varianten (Store-Bild mit/ohne
+  Marketing-Rahmen, Geräte-Crop) wirkten reingeklebt bzw. abgeschnitten.
+- `assets/img/app-store-badge-{de,en}.svg` - offizielle Apple-Badges ("Laden im App Store" /
+  "Download on the App Store", schwarz), geladen von tools.applemediaservices.com; ersetzen
+  die eigenen Pill-Buttons in Hero und Abschluss-CTA (der Nav-Button bleibt Text).
+- `assets/img/store-{02,05,06,07}-{de,en}.jpg` - Bilderleiste unter den Funktionen-Karten
+  (horizontal scrollbar, Scroll-Snap): Variablen-Katalog, Formen-Menü, Vollbild-Editor,
+  Dark Mode. Gleiche Quelle, mit `sips` auf 660px verkleinert. 03/04 bewusst weggelassen,
+  die zeigt das Video schon.
+- `assets/video/potd-flow.mp4` / `potd-flow-en.mp4` - Bildschirmaufnahmen des Ablaufs
+  (App auf Deutsch bzw. Englisch), laufen als stummer Loop in der Drei-Schritte-Sektion.
+  Aus `~/personal/apps/potd_images/potd_flow{,_en}.MP4` mit ffmpeg erzeugt: Statusleiste
+  abgeschnitten, Foto-Picker geblurrt (bis auf die gewählte Kachel oben links), Schnitt
+  beim "Gesichert"/"Saved"-Popup (der Mediathek-Teil dahinter ist raus), danach 4 s das
+  fertige Bild (`finished_{de,en}.JPEG`) als Standbild; 810px, 30 fps, ohne Ton.
 
 ## Offene Punkte
 
 - [ ] **Echte Kontaktdaten** in `impressum.md`, `en/imprint.md`, `datenschutz.md` und
-      `en/privacy.md` eintragen - aktuell steht überall "Max Mustermann" als Platzhalter.
-      Alle vier Dateien gleichzeitig anfassen.
-- [ ] **App-Store-Link** setzen: in `index.html` und `en/index.html` zeigen drei `href="#"` auf
-      nichts (Nav-Button, Hero-Button, Abschluss-Button).
-- [ ] `assets/img/demo-foto.jpg` ergänzen - ein unbeschriftetes Reisefoto im Hochformat als
-      Hintergrund der Schritt-Animation. Fehlt die Datei, bleibt ein gestreifter Platzhalter
-      stehen, die Seite bleibt heil.
+      `en/privacy.md` eintragen - Name/Anschrift sind noch "Max Mustermann"-Platzhalter.
+      Alle vier Dateien gleichzeitig anfassen. Die E-Mail-Adresse ist bereits echt
+      (potd.picoftheday@gmail.com, auch auf den Support-Seiten).
+- [ ] **App-Store-Link verifizieren**: `id6780421556` ist in beiden Landing Pages verlinkt
+      (DE mit `/de/`, EN mit `/us/`), gab aber vor dem Release noch 404 - nach der
+      App-Freigabe einmal klicken und prüfen.
 
 ## Herkunft
 

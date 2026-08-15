@@ -10,6 +10,11 @@ alt_label: Deutsch
 POTD captions your photos with capture data such as place, date and weather - right on the iPhone,
 without your images ever leaving the device.
 
+## Contact
+
+Questions, problems or feedback? Write to
+[potd.picoftheday@gmail.com](mailto:potd.picoftheday@gmail.com).
+
 ## Frequently asked questions
 
 ### Why is a text field empty?

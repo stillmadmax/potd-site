@@ -20,7 +20,7 @@ Musterstraße 1<br>
 12345 Musterstadt
 </address>
 
-E-Mail: kontakt@example.com
+E-Mail: potd.picoftheday@gmail.com
 
 *(Platzhalter - vor der Veröffentlichung durch die echten Angaben ersetzen.)*
 

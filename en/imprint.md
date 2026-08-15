@@ -21,7 +21,7 @@ Musterstraße 1<br>
 Germany
 </address>
 
-Email: kontakt@example.com
+Email: potd.picoftheday@gmail.com
 
 *(Placeholder - to be replaced with the real details before publication.)*
 
