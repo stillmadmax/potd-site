@@ -15,50 +15,99 @@ ohne dass deine Bilder das Gerät verlassen.
 Fragen, Probleme oder Feedback? Schreib an
 [potd.picoftheday@gmail.com](mailto:potd.picoftheday@gmail.com).
 
-## Häufige Fragen
+## Schnellstart
 
-### Warum bleibt ein Textfeld leer?
+1. **Vorlage erstellen** - Einstellungen → Bibliotheken → Vorlagen → „+". Schreibe deinen Text und
+   füge Variablen wie `{location}` oder `{date}` ein - sie werden beim Anwenden automatisch mit den
+   Daten des Fotos gefüllt. Die Auswahl liegt im Editor unter „Variablen", eine vollständige Liste
+   mit Beispielen in Einstellungen → Standardwerte → Alle Variablen.
+2. **Als Favorit markieren** - Tippe in der Vorlagen-Liste links auf den Stern. Favoriten erscheinen
+   als Chips direkt auf dem Hauptscreen - ein Tipp wendet sie an.
+3. **Stil erstellen** - Passe im „Stil"-Bereich Schriftart, Größe, Farbe und Hintergrund an und
+   speichere das als Stil - oder lege in Einstellungen → Bibliotheken → Stile → „+" einen neuen an.
+4. **Stil mit Vorlage verknüpfen** - Wähle beim Bearbeiten einer Vorlage einen Stil aus. Wird die
+   Vorlage angewendet, übernimmt sie diesen Stil automatisch als Startpunkt.
+5. **Anwenden & feinjustieren** - Wähle Vorlage und Stil über die Karten auf dem Hauptscreen oder
+   die Favoriten-Chips. Im Vollbild-Editor kannst du den Text verschieben, skalieren und drehen -
+   beim Drehen rastet er spürbar an den geraden Winkeln ein (0°, 90°, 180°, 270°).
+6. **Speichern** - „Sichern" legt ein neues Bild in der Mediathek an (Originalname + „-potd").
+   Dein Originalfoto bleibt dabei unverändert erhalten.
 
-POTD zeigt nur Daten an, die wirklich vorhanden sind - geraten wird nie. Ein leeres Feld bedeutet,
-dass das Foto die nötigen Informationen nicht enthält. Häufigster Fall: Dem Bild fehlen die
-GPS-Koordinaten (z. B. bei Screenshots, aus Messengern gespeicherten Bildern oder wenn die Kamera
-ohne Standortfreigabe fotografiert hat). Ohne Koordinaten können Ort, Wetter, Gipfel und die
-Sonnenfelder nicht ermittelt werden.
+## Fotos, Sichern & Teilen
 
-### Woher kommt das Wetter bei älteren Fotos?
+### Wird mein Originalfoto überschrieben?
 
-Für Fotos aus deiner Mediathek fragt POTD das historische Wetter zum Aufnahmezeitpunkt ab -
-Voraussetzung sind Aufnahmedatum und Koordinaten im Foto. Nur bei Aufnahmen direkt mit der
-Kamera in der App wird das aktuelle Wetter verwendet.
+Nein. Beim Sichern legt die App immer ein neues, zusätzliches Bild in der Mediathek an
+(Originalname + „-potd"). Dein Original bleibt unverändert erhalten.
 
-### Was bedeutet das Gipfel-Feld genau?
+### Wohin werden die Bilder gespeichert?
 
-Es zeigt den **nächstgelegenen benannten Gipfel** zum Aufnahmeort - das ist nicht zwangsläufig
-der Berg, der auf dem Foto zu sehen ist.
+In die Mediathek - auf Wunsch zusätzlich in ein Album deiner Wahl (Einstellungen → Speicherort).
 
-### Wird mein Originalfoto verändert?
+### Kann ich mehrere Fotos auf einmal bearbeiten?
 
-Nein. Das beschriftete Bild wird immer als neues Foto in deiner Mediathek gespeichert; das
-Original bleibt unverändert.
+Ja, wähle beim Öffnen einfach mehrere Fotos aus (bis zu 20). Wische in der Vorschau, um zwischen
+den Bildern zu wechseln. Jedes Foto füllt die Variablen mit seinen eigenen Daten (Ort, Datum,
+Wetter); der Stil gilt für alle gemeinsam. „Sichern" legt für jedes Foto ein eigenes neues Bild an.
 
-### Kann ich ein Bild ohne Standort teilen?
+### Was passiert mit meinem Standort beim Teilen?
 
-Ja. Trägt das Bild Standortdaten, fragt POTD beim Teilen, ob mit oder ohne Standort geteilt
-werden soll.
+Enthält das Foto GPS-Daten, fragt die App vor dem Teilen: „Mit Standort teilen" oder „Ohne
+Standort teilen". Bei „Ohne Standort" werden die GPS-Daten nur aus der geteilten Kopie entfernt.
+Beim Sichern in die Mediathek bleiben die Bilddaten dagegen vollständig erhalten.
 
-### Wie setze ich die App zurück?
+## Daten & Variablen
 
-In den App-Einstellungen unter „App auf Standardwerte zurücksetzen". Das entfernt alle Vorlagen,
-Stile und Einstellungen und stellt den Auslieferungszustand wieder her - deine Fotos in der
-Mediathek bleiben unberührt.
+### Woher kommen Ort, Datum und Wetter?
 
-### Warum fragt die App nach Berechtigungen?
+Bei einem Foto aus der Mediathek kommen die Werte aus den im Bild selbst gespeicherten Daten
+(EXIF/GPS); das Wetter wird passend zum Aufnahmezeitpunkt nachgeschlagen. Bei einer neuen Aufnahme
+in der App zählen der aktuelle Standort und das aktuelle Wetter. Fehlen Daten (z. B. kein GPS im
+Bild), bleibt das Feld leer - die App rät nie.
 
-- **Fotos**: um ein Foto auszuwählen und das Ergebnis zu speichern
-- **Kamera**: nur, wenn du direkt in der App fotografierst
-- **Standort**: nur bei Kameraaufnahmen, um Ort und Wetter für „hier und jetzt" zu ermitteln
+### Warum bleiben bei einer Aufnahme in der App manche Felder leer?
 
-Details dazu stehen in der [Datenschutzerklärung](datenschutz).
+Beim Fotografieren direkt in der App werden die technischen Kameradaten (Blende, ISO, Objektiv
+usw.) nicht ins Bild geschrieben - diese Felder bleiben leer. Ort, Datum und Wetter werden dafür
+live vom aktuellen Standort gefüllt. „Mehr anzeigen" im Hinweis listet genau die betroffenen
+Felder auf.
+
+### Warum sind Wetter-Felder manchmal leer?
+
+Wetterdaten werden über das Internet nachgeschlagen. Sie bleiben leer, wenn gerade keine
+Verbindung besteht oder dem Foto GPS-Position bzw. Aufnahmezeit fehlen - ohne beides lässt sich
+kein Wetter zuordnen. Auch hier gilt: lieber leer als geraten.
+
+### Was zeigt das Gipfel-Feld?
+
+Den nächstgelegenen eingetragenen Gipfel aus OpenStreetMap, gemessen an der GPS-Position des
+Fotos - das ist nicht unbedingt der Gipfel, der auf dem Bild zu sehen ist. Ohne GPS-Daten bleibt
+das Feld leer, und das Nachschlagen kann einen Moment dauern.
+
+### Wann braucht die App meinen Standort?
+
+Nur beim Fotografieren direkt in der App - dort füllen der aktuelle Standort und das aktuelle
+Wetter die Variablen. Fotos aus der Mediathek nutzen ausschließlich die im Bild gespeicherten
+Daten; dafür ist keine Standortfreigabe nötig.
+
+## Vorlagen & Stile
+
+### Kann eine Vorlage mehrere Texte enthalten?
+
+Ja. Füge im Vorlagen-Editor weitere Textfelder hinzu - jedes lässt sich auf dem Foto frei
+platzieren und in der Größe einzeln anpassen. Schriftart, Farbe und Hintergrund gelten für alle
+Felder gemeinsam.
+
+### Wie sortiere ich Vorlagen und Stile?
+
+Über das Sortier-Symbol oben in der jeweiligen Liste: Name A-Z / Z-A oder „Eigene Reihenfolge"
+(per Ziehen anordnen). Die gewählte Reihenfolge gilt auch für die Favoriten-Chips und die Auswahl
+auf dem Hauptscreen.
+
+### Wie dupliziere oder lösche ich einen Eintrag?
+
+Über das „•••"-Menü rechts in jeder Zeile: Bearbeiten, Duplizieren, Löschen. Ein Tipp auf die
+Zeile selbst öffnet direkt die Bearbeitung.
 
 ## Datenschutz
 
