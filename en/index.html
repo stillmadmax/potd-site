@@ -54,10 +54,13 @@
   </div>
   <div class="hero-extra">
     <div class="sample">
-      <p class="sample-label">How the text lands in the photo</p>
-      <span class="sample-line">Zirmerskopf (DE), 987 m a.s.l.</span>
-      <span class="sample-line">July 28, 2026, 12:03 PM,</span>
-      <span class="sample-line">22 °C, mostly clear</span>
+      <p class="sample-label">The app writes this - you type nothing</p>
+      <span class="sample-line">Lisbon (PT), 28 m a.s.l.</span>
+      <span class="sample-src">from GPS and elevation data</span>
+      <span class="sample-line">October 3, 2026, 6:41 PM,</span>
+      <span class="sample-src">from the photo's metadata</span>
+      <span class="sample-line">24 °C, golden hour</span>
+      <span class="sample-src">weather at capture time</span>
     </div>
     <div class="cta-row">
       <a class="btn" href="https://apps.apple.com/us/app/potd-pic-of-the-day/id6780421556">Download on the App Store</a>
@@ -104,14 +107,14 @@
       <h3 class="serif">Templates instead of typing</h3>
       <p>
         Write the text once with placeholders, then the app fills it in again for every photo.
-        80 fields are ready to use: address, weather at the time of capture, camera data, moon
+        79 fields are ready to use: address, weather at the time of capture, camera data, moon
         phase, nearest peak and plenty more.
       </p>
     </div>
     <div class="card">
       <h3 class="serif">Styles that stay put</h3>
       <p>
-        A style you set up once and never touch again. 135 fonts and 23 backdrop shapes are
+        A style you set up once and never touch again. 135 fonts and 22 backdrop shapes are
         included, all of it offline on the device.
       </p>
     </div>
@@ -176,6 +179,17 @@
 </section>
 
 </main>
+
+<script>
+  /* Accessibility: don't auto-loop the video for users who prefer reduced motion */
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    document.querySelectorAll(".demo-video").forEach(function (v) {
+      v.removeAttribute("autoplay");
+      v.pause();
+      v.controls = true;
+    });
+  }
+</script>
 
 <footer class="wrap foot">
   <div>Pic of the Day. A project by Maximilian Schell.</div>
