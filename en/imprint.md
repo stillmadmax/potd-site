@@ -71,3 +71,8 @@ The app bundles 82 font families under the SIL Open Font License 1.1 or the
 [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0). The complete list including all
 copyright notices is shown in the app under Settings → About → Licences; the licence texts ship
 with the app.
+
+## Colophon
+
+POTD is a private one-person project, built with the help of
+[Claude Code](https://claude.com/claude-code) (Anthropic).

@@ -67,3 +67,8 @@ Die App bündelt 82 Schriftfamilien unter der SIL Open Font License 1.1 beziehun
 [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0). Die vollständige Liste mit allen
 Copyright-Vermerken zeigt die App unter Einstellungen → Über → Lizenzen; die Lizenztexte sind in der
 App enthalten.
+
+## Kolophon
+
+POTD ist ein privates Einzelprojekt, entwickelt mit Unterstützung von
+[Claude Code](https://claude.com/claude-code) (Anthropic).
