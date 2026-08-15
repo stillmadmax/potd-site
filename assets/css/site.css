@@ -258,7 +258,8 @@ a:focus-visible,
   align-self: start;
 }
 
-/* Das App-Store-Bild kommt unbeschnitten und unbearbeitet rein. */
+/* Nur das Geraet aus dem App-Store-Bild; der border-radius liegt knapp
+   UEBER der echten Geraeterundung, damit keine blauen Ecken durchblitzen. */
 .phone {
   grid-column: 2;
   grid-row: 1 / span 2;
@@ -271,8 +272,7 @@ a:focus-visible,
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 28px;
-  /* Schatten im Blau der Karte, damit sie vom Grund abhebt */
+  border-radius: 44px;
   box-shadow: 0 24px 60px rgba(43, 52, 136, 0.32), 0 6px 18px rgba(43, 52, 136, 0.18);
 }
 
@@ -641,6 +641,10 @@ h1 {
     order: 3;
     margin: 0 auto;
     width: 290px;
+  }
+
+  .shot {
+    border-radius: 38px;
   }
 
   .sample {

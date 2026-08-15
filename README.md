@@ -29,9 +29,11 @@ Layout baut daraus den Link auf die andere Sprache. Die Landing Pages verlinken 
   müssen beim Ausliefern mitgehen.
 - `assets/css/site.css` - Farben und Abstände spiegeln das "Quiet Studio"-Theme der App
   (`AppTheme` in `potd/ModernDesign.swift`).
-- `assets/img/hero-store-de.jpg` / `hero-store-en.jpg` - Hero-Bild: der App-Store-Framer-
-  Export unbeschnitten (`~/personal/apps/potd_images/framed/6.9-zoll/{de,en}/01.png`, nur
-  als JPEG komprimiert), bewusst ohne CSS-Zuschnitt oder Rahmen-Tricks.
+- `assets/img/hero-device-de.jpg` / `hero-device-en.jpg` - Hero-Bild: nur das Gerät aus dem
+  App-Store-Framer-Export (`~/personal/apps/potd_images/framed/6.9-zoll/{de,en}/01.png`,
+  ffmpeg-Crop `942:2088:187:626`), ohne den blauen Marketing-Rahmen. Der `border-radius`
+  auf `.shot` (44px, mobil 38px) liegt knapp über der echten Geräterundung und schneidet
+  die blauen Eck-Reste weg.
 - `assets/img/app-store-badge-{de,en}.svg` - offizielle Apple-Badges ("Laden im App Store" /
   "Download on the App Store", schwarz), geladen von tools.applemediaservices.com; ersetzen
   die eigenen Pill-Buttons in Hero und Abschluss-CTA (der Nav-Button bleibt Text).
