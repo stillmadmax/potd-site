@@ -36,11 +36,12 @@ Layout baut daraus den Link auf die andere Sprache. Die Landing Pages verlinken 
   (horizontal scrollbar, Scroll-Snap): Variablen-Katalog, Formen-Menü, Vollbild-Editor,
   Dark Mode. Gleiche Quelle, mit `sips` auf 660px verkleinert. 03/04 bewusst weggelassen,
   die zeigt das Video schon.
-- `assets/video/potd-flow.mp4` - Bildschirmaufnahme des kompletten Ablaufs, läuft als
-  stummer Loop in der Drei-Schritte-Sektion. Aus `~/personal/apps/potd_images/potd_flow.mp4`
-  mit ffmpeg erzeugt: Statusleiste abgeschnitten, Foto-Picker geblurrt (bis auf die gewählte
-  Kachel oben links), Mediathek am Ende komplett geblurrt; 810px, 30 fps, ohne Ton.
-  Beide Sprachseiten nutzen dasselbe (deutsche) Video.
+- `assets/video/potd-flow.mp4` / `potd-flow-en.mp4` - Bildschirmaufnahmen des kompletten
+  Ablaufs (App auf Deutsch bzw. Englisch), laufen als stummer Loop in der
+  Drei-Schritte-Sektion. Aus `~/personal/apps/potd_images/potd_flow{,_en}.mp4` mit ffmpeg
+  erzeugt: Statusleiste abgeschnitten, Foto-Picker geblurrt (bis auf die gewählte Kachel
+  oben links), private Mediathek-Inhalte am Ende geblurrt (DE: Grid; EN: "Von
+  Schwester"-Zeile + Thumbnail-Leiste); 810px, 30 fps, ohne Ton.
 
 ## Offene Punkte
 
