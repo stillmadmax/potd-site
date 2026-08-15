@@ -221,8 +221,7 @@ a:focus-visible,
   align-self: start;
 }
 
-/* Der Geraeterahmen steckt im Bild selbst (App-Store-Framer-Export);
-   der border-radius schneidet nur die Hintergrund-Reste in den Ecken weg. */
+/* Das App-Store-Bild kommt unbeschnitten und unbearbeitet rein. */
 .phone {
   grid-column: 2;
   grid-row: 1 / span 2;
@@ -235,8 +234,6 @@ a:focus-visible,
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 42px;
-  box-shadow: 0 24px 60px rgba(20, 22, 26, 0.14);
 }
 
 .eyebrow {
@@ -562,10 +559,6 @@ h1 {
     order: 2;
     margin: 0 auto;
     width: 290px;
-  }
-
-  .shot {
-    border-radius: 36px;
   }
 
   .hero-extra {

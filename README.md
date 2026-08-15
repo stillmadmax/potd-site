@@ -29,10 +29,9 @@ Layout baut daraus den Link auf die andere Sprache. Die Landing Pages verlinken 
   müssen beim Ausliefern mitgehen.
 - `assets/css/site.css` - Farben und Abstände spiegeln das "Quiet Studio"-Theme der App
   (`AppTheme` in `potd/ModernDesign.swift`).
-- `assets/img/hero-framed-de.jpg` / `hero-framed-en.jpg` - Hero-Bild: das Gerät (inkl.
-  Rahmen) aus dem App-Store-Framer-Export geschnitten
-  (`~/personal/apps/potd_images/framed/6.9-zoll/{de,en}/01.png`, ffmpeg-Crop
-  `942:2094:187:625`); die Ecken schneidet `border-radius` auf `.shot` ab.
+- `assets/img/hero-store-de.jpg` / `hero-store-en.jpg` - Hero-Bild: der App-Store-Framer-
+  Export unbeschnitten (`~/personal/apps/potd_images/framed/6.9-zoll/{de,en}/01.png`, nur
+  als JPEG komprimiert), bewusst ohne CSS-Zuschnitt oder Rahmen-Tricks.
 - `assets/video/potd-flow.mp4` - Bildschirmaufnahme des kompletten Ablaufs, läuft als
   stummer Loop in der Drei-Schritte-Sektion. Aus `~/personal/apps/potd_images/potd_flow.mp4`
   mit ffmpeg erzeugt: Statusleiste abgeschnitten, Foto-Picker geblurrt (bis auf die gewählte
