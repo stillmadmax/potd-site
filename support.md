@@ -84,6 +84,15 @@ Den nächstgelegenen eingetragenen Gipfel aus OpenStreetMap, gemessen an der GPS
 Fotos - das ist nicht unbedingt der Gipfel, der auf dem Bild zu sehen ist. Ohne GPS-Daten bleibt
 das Feld leer, und das Nachschlagen kann einen Moment dauern.
 
+### Warum bleibt das Gipfel-Feld manchmal leer?
+
+Dafür gibt es zwei Gründe. Erstens sucht die App nur im Umkreis von rund fünf Kilometern - liegt
+dort kein eingetragener Gipfel, bleibt das Feld leer, statt einen weit entfernten Berg zu nennen.
+Zweitens läuft die Abfrage über einen kostenlosen öffentlichen Kartendienst, der nur wenige
+Anfragen kurz hintereinander zulässt. Schlägt eine fehl, pausiert die App weitere Versuche etwa
+eine Minute lang, damit die übrigen Felder nicht ausgebremst werden - in dieser Zeit bleibt das
+Gipfel-Feld leer. Wähle das Foto einfach etwas später noch einmal aus, dann klappt es meist.
+
 ### Wann braucht die App meinen Standort?
 
 Nur beim Fotografieren direkt in der App - dort füllen der aktuelle Standort und das aktuelle

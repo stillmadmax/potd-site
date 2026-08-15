@@ -84,6 +84,14 @@ The nearest peak recorded in OpenStreetMap, measured from the photo's GPS positi
 necessarily the peak visible in the picture. Without GPS data the field stays empty, and the
 lookup can take a moment.
 
+### Why is the peak field sometimes empty?
+
+There are two reasons. First, the app only searches within about five kilometres - if no peak is
+recorded there, the field stays empty instead of naming some far-away mountain. Second, the lookup
+uses a free public map service that only allows a few requests in quick succession. If one fails,
+the app pauses further attempts for about a minute so the other fields aren't held up - during that
+time the peak field stays empty. Just pick the photo again a little later and it will usually work.
+
 ### When does the app need my location?
 
 Only when taking a photo directly in the app - there, your current location and current weather
