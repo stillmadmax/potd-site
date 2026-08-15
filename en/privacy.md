@@ -7,7 +7,7 @@ alt_label: Deutsch
 
 # Privacy Policy for POTD (Pic of the Day)
 
-Last updated: 8 August 2026
+Last updated: 15 August 2026
 
 *This is a translation provided for convenience. The [German version](../datenschutz) is the legally binding
 one; in case of any discrepancy, the German text prevails.*
@@ -93,7 +93,7 @@ influence over this; Apple's privacy policy applies.
 ### Settings
 
 Templates, styles, fonts and settings are stored **locally on the device** (`UserDefaults`) and are
-not transmitted. They are deleted when you delete the app or choose "Reset app to default settings"
+not transmitted. They are deleted when you delete the app or choose "Reset app to defaults"
 in the app's settings.
 
 ## Legal bases
