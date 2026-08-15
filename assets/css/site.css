@@ -10,8 +10,9 @@
   --ink: #14161a;
   --ink-2: rgba(20, 22, 26, 0.72);
   --ink-3: rgba(20, 22, 26, 0.66);
-  --accent: #3a5bd9;
-  --accent-dark: #2b47b5;
+  /* Blau aus den App-Store-Bildern gesampelt (Verlauf #4c5add -> #2b3488) */
+  --accent: #3d48bc;
+  --accent-dark: #2b3488;
   --stroke: rgba(20, 22, 26, 0.12);
   --pad-x: 56px;
   --maxw: 1120px;
@@ -235,6 +236,8 @@ a:focus-visible,
   width: 100%;
   height: auto;
   border-radius: 28px;
+  /* Schatten im Blau der Karte, damit sie vom Grund abhebt */
+  box-shadow: 0 24px 60px rgba(43, 52, 136, 0.32), 0 6px 18px rgba(43, 52, 136, 0.18);
 }
 
 .eyebrow {
