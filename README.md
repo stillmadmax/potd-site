@@ -32,6 +32,9 @@ Layout baut daraus den Link auf die andere Sprache. Die Landing Pages verlinken 
 - `assets/img/hero-store-de.jpg` / `hero-store-en.jpg` - Hero-Bild: der App-Store-Framer-
   Export unbeschnitten (`~/personal/apps/potd_images/framed/6.9-zoll/{de,en}/01.png`, nur
   als JPEG komprimiert), bewusst ohne CSS-Zuschnitt oder Rahmen-Tricks.
+- `assets/img/app-store-badge-{de,en}.svg` - offizielle Apple-Badges ("Laden im App Store" /
+  "Download on the App Store", schwarz), geladen von tools.applemediaservices.com; ersetzen
+  die eigenen Pill-Buttons in Hero und Abschluss-CTA (der Nav-Button bleibt Text).
 - `assets/img/store-{02,05,06,07}-{de,en}.jpg` - Bilderleiste unter den Funktionen-Karten
   (horizontal scrollbar, Scroll-Snap): Variablen-Katalog, Formen-Menü, Vollbild-Editor,
   Dark Mode. Gleiche Quelle, mit `sips` auf 660px verkleinert. 03/04 bewusst weggelassen,

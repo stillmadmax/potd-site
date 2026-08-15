@@ -218,6 +218,22 @@ a:focus-visible,
   line-height: 1.5;
 }
 
+/* Offizielles Apple-Badge (SVG von tools.applemediaservices.com) als CTA */
+.store-badge {
+  display: inline-block;
+  transition: transform 0.18s ease;
+}
+
+.store-badge:hover {
+  transform: translateY(-1px);
+}
+
+.store-badge img {
+  display: block;
+  height: 52px;
+  width: auto;
+}
+
 /* ---------- Hero ---------- */
 
 .hero {
