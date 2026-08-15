@@ -10,6 +10,11 @@ alt_label: English
 POTD beschriftet deine Fotos mit Aufnahmedaten wie Ort, Datum und Wetter - direkt auf dem iPhone,
 ohne dass deine Bilder das Gerät verlassen.
 
+## Kontakt
+
+Fragen, Probleme oder Feedback? Schreib an
+[potd.picoftheday@gmail.com](mailto:potd.picoftheday@gmail.com).
+
 ## Häufige Fragen
 
 ### Warum bleibt ein Textfeld leer?
