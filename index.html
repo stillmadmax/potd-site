@@ -13,7 +13,7 @@
 <meta property="og:title" content="Pic of the Day - Fotos, die sich selbst beschriften">
 <meta property="og:description" content="Ort, Datum, Wetter und Höhe aus den Metadaten deines Fotos, als gestalteter Text ins Bild. Kostenlos, ohne Konto, ohne Upload.">
 <meta property="og:url" content="https://stillmadmax.github.io/potd-site/">
-<meta property="og:image" content="https://stillmadmax.github.io/potd-site/assets/img/hero-de.jpg">
+<meta property="og:image" content="https://stillmadmax.github.io/potd-site/assets/img/hero-framed-de.jpg">
 <meta property="og:locale" content="de_DE">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="assets/css/fonts.css">
@@ -49,8 +49,8 @@
     </p>
   </div>
   <div class="phone">
-    <img class="shot" src="assets/img/hero-de.jpg" width="760" height="1557"
-         alt="POTD Hauptbildschirm: ein Bergsee-Foto, beschriftet mit Gipfel, Höhe, Datum und Wetter">
+    <img class="shot" src="assets/img/hero-framed-de.jpg" width="942" height="2094"
+         alt="iPhone mit dem POTD-Hauptbildschirm: ein Bergsee-Foto, beschriftet mit Gipfel, Höhe, Datum und Wetter">
   </div>
   <div class="hero-extra">
     <div class="sample">
@@ -73,40 +73,32 @@
   <h2 class="serif section-head">In fünf Sekunden zu deinem Bild.</h2>
   <div class="demo">
     <div class="steps">
-      <button class="step" type="button" data-step="1">
-        <span class="step-num">01</span>
-        <span class="step-title serif">Foto wählen</span>
-        <span class="step-text">Aus der Mediathek oder direkt in der App aufgenommen.</span>
-      </button>
-      <button class="step" type="button" data-step="2">
-        <span class="step-num">02</span>
-        <span class="step-title serif">Vorlage wählen</span>
-        <span class="step-text">Die App liest die Metadaten des Fotos und füllt Ort, Datum und Wetter selbständig ein.</span>
-      </button>
-      <button class="step is-active" type="button" data-step="3" aria-current="true">
-        <span class="step-num">03</span>
-        <span class="step-title serif">Sichern</span>
-        <span class="step-text">Das beschriftete Bild landet als neues Foto in deiner Mediathek.</span>
-      </button>
+      <div class="step">
+        <p class="step-num">01</p>
+        <h3 class="serif">Foto wählen</h3>
+        <p>Aus der Mediathek oder direkt in der App aufgenommen.</p>
+      </div>
+      <div class="step">
+        <p class="step-num">02</p>
+        <h3 class="serif">Vorlage wählen</h3>
+        <p>Die App liest die Metadaten des Fotos und füllt Ort, Datum und Wetter selbständig ein.</p>
+      </div>
+      <div class="step">
+        <p class="step-num">03</p>
+        <h3 class="serif">Sichern</h3>
+        <p>Das beschriftete Bild landet als neues Foto in deiner Mediathek.</p>
+      </div>
     </div>
     <div class="demo-phone">
-      <div class="demo-screen">
-        <div class="demo-slide demo-slide-placeholder" data-step="1" aria-hidden="true">
-          <span class="demo-hint">dein Foto</span>
-        </div>
-        <img class="demo-slide" data-step="2" src="assets/img/vorlagen-de.jpg"
-             width="760" height="1557" aria-hidden="true"
-             alt="Vorlagen-Liste der App: Minimal, Wanderung und Ereignis, jede mit Platzhaltern wie {peak} und {date}">
-        <img class="demo-slide is-active" data-step="3" src="assets/img/hero-de.jpg"
-             width="760" height="1557"
-             alt="Fertig beschriftetes Bergsee-Foto auf dem Hauptbildschirm, bereit zum Sichern">
-      </div>
+      <video class="demo-video" src="assets/video/potd-flow.mp4" autoplay muted loop playsinline
+             width="810" height="1642"
+             aria-label="Bildschirmaufnahme: ein Foto wird aus der Mediathek gewählt, die Vorlage füllt Ort, Datum und Wetter ein, das fertige Bild wird gesichert."></video>
     </div>
   </div>
 </section>
 
 <section class="wrap" id="funktionen">
-  <h2 class="serif section-head">Was die App für dich ausfüllt.</h2>
+  <h2 class="serif section-head">Was dir die App abnimmt.</h2>
   <div class="features">
     <div class="card">
       <h3 class="serif">Vorlagen statt Tippen</h3>
@@ -174,8 +166,6 @@
 </section>
 
 </main>
-
-<script src="assets/js/demo.js" defer></script>
 
 <footer class="wrap foot">
   <div>Pic of the Day. Ein Projekt von Maximilian Schell.</div>

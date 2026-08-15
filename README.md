@@ -29,12 +29,15 @@ Layout baut daraus den Link auf die andere Sprache. Die Landing Pages verlinken 
   müssen beim Ausliefern mitgehen.
 - `assets/css/site.css` - Farben und Abstände spiegeln das "Quiet Studio"-Theme der App
   (`AppTheme` in `potd/ModernDesign.swift`).
-- `assets/img/hero-de.jpg` / `hero-en.jpg` - Hauptbildschirm-Screenshots für Hero und
-  Schritt 3 der Demo; `vorlagen-de.jpg` / `templates-en.jpg` - Vorlagen-Liste für Schritt 2.
-  Quelle: `~/personal/apps/potd_images/` (mit `sips` auf 760px verkleinert, Statusleiste
-  abgeschnitten).
-- `assets/js/demo.js` - schaltet die Drei-Schritte-Demo (Klick auf einen Schritt zeigt den
-  passenden Screen, Auto-Durchlauf bis zum ersten Klick).
+- `assets/img/hero-framed-de.jpg` / `hero-framed-en.jpg` - Hero-Bild: das Gerät (inkl.
+  Rahmen) aus dem App-Store-Framer-Export geschnitten
+  (`~/personal/apps/potd_images/framed/6.9-zoll/{de,en}/01.png`, ffmpeg-Crop
+  `942:2094:187:625`); die Ecken schneidet `border-radius` auf `.shot` ab.
+- `assets/video/potd-flow.mp4` - Bildschirmaufnahme des kompletten Ablaufs, läuft als
+  stummer Loop in der Drei-Schritte-Sektion. Aus `~/personal/apps/potd_images/potd_flow.mp4`
+  mit ffmpeg erzeugt: Statusleiste abgeschnitten, Foto-Picker geblurrt (bis auf die gewählte
+  Kachel oben links), Mediathek am Ende komplett geblurrt; 810px, 30 fps, ohne Ton.
+  Beide Sprachseiten nutzen dasselbe (deutsche) Video.
 
 ## Offene Punkte
 
@@ -43,11 +46,6 @@ Layout baut daraus den Link auf die andere Sprache. Die Landing Pages verlinken 
       Alle vier Dateien gleichzeitig anfassen.
 - [ ] **App-Store-Link** setzen: in `index.html` und `en/index.html` zeigen drei `href="#"` auf
       nichts (Nav-Button, Hero-Button, Abschluss-Button).
-- [ ] **Original-Foto für Schritt 1** der Demo ergänzen (das Eibsee-Foto unbeschriftet, DE und
-      EN identisch) - bis dahin zeigt Schritt 1 einen gestreiften Platzhalter, die Seite bleibt
-      heil.
-- [ ] **Bildschirmaufnahme** des kompletten Ablaufs (Foto wählen → Vorlage → Sichern) als
-      loopendes `<video>` in die Demo-Sektion einbauen, sobald die Aufnahme vorliegt.
 
 ## Herkunft
 

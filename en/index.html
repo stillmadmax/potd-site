@@ -13,7 +13,7 @@
 <meta property="og:title" content="Pic of the Day - photos that caption themselves">
 <meta property="og:description" content="Place, date, weather and altitude from your photo's metadata, set as text into the image. Free, no account, no upload.">
 <meta property="og:url" content="https://stillmadmax.github.io/potd-site/en/">
-<meta property="og:image" content="https://stillmadmax.github.io/potd-site/assets/img/hero-en.jpg">
+<meta property="og:image" content="https://stillmadmax.github.io/potd-site/assets/img/hero-framed-en.jpg">
 <meta property="og:locale" content="en_GB">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="../assets/css/fonts.css">
@@ -49,8 +49,8 @@
     </p>
   </div>
   <div class="phone">
-    <img class="shot" src="../assets/img/hero-en.jpg" width="760" height="1557"
-         alt="POTD main screen: a mountain lake photo captioned with peak, altitude, date and weather">
+    <img class="shot" src="../assets/img/hero-framed-en.jpg" width="942" height="2094"
+         alt="iPhone showing the POTD main screen: a mountain lake photo captioned with peak, altitude, date and weather">
   </div>
   <div class="hero-extra">
     <div class="sample">
@@ -73,40 +73,32 @@
   <h2 class="serif section-head">Your photo in five seconds.</h2>
   <div class="demo">
     <div class="steps">
-      <button class="step" type="button" data-step="1">
-        <span class="step-num">01</span>
-        <span class="step-title serif">Pick a photo</span>
-        <span class="step-text">From your library, or taken right inside the app.</span>
-      </button>
-      <button class="step" type="button" data-step="2">
-        <span class="step-num">02</span>
-        <span class="step-title serif">Pick a template</span>
-        <span class="step-text">The app reads the photo's metadata and fills in place, date and weather on its own.</span>
-      </button>
-      <button class="step is-active" type="button" data-step="3" aria-current="true">
-        <span class="step-num">03</span>
-        <span class="step-title serif">Save</span>
-        <span class="step-text">The captioned image lands as a new photo in your library.</span>
-      </button>
+      <div class="step">
+        <p class="step-num">01</p>
+        <h3 class="serif">Pick a photo</h3>
+        <p>From your library, or taken right inside the app.</p>
+      </div>
+      <div class="step">
+        <p class="step-num">02</p>
+        <h3 class="serif">Pick a template</h3>
+        <p>The app reads the photo's metadata and fills in place, date and weather on its own.</p>
+      </div>
+      <div class="step">
+        <p class="step-num">03</p>
+        <h3 class="serif">Save</h3>
+        <p>The captioned image lands as a new photo in your library.</p>
+      </div>
     </div>
     <div class="demo-phone">
-      <div class="demo-screen">
-        <div class="demo-slide demo-slide-placeholder" data-step="1" aria-hidden="true">
-          <span class="demo-hint">your photo</span>
-        </div>
-        <img class="demo-slide" data-step="2" src="../assets/img/templates-en.jpg"
-             width="760" height="1557" aria-hidden="true"
-             alt="The app's template list: Minimal, Hiking and Event, each with placeholders like {peak} and {date}">
-        <img class="demo-slide is-active" data-step="3" src="../assets/img/hero-en.jpg"
-             width="760" height="1557"
-             alt="The finished captioned mountain lake photo on the main screen, ready to save">
-      </div>
+      <video class="demo-video" src="../assets/video/potd-flow.mp4" autoplay muted loop playsinline
+             width="810" height="1642"
+             aria-label="Screen recording: a photo is picked from the library, the template fills in place, date and weather, and the finished image is saved."></video>
     </div>
   </div>
 </section>
 
 <section class="wrap" id="features">
-  <h2 class="serif section-head">What the app fills in for you.</h2>
+  <h2 class="serif section-head">What the app takes off your plate.</h2>
   <div class="features">
     <div class="card">
       <h3 class="serif">Templates instead of typing</h3>
@@ -174,8 +166,6 @@
 </section>
 
 </main>
-
-<script src="../assets/js/demo.js" defer></script>
 
 <footer class="wrap foot">
   <div>Pic of the Day. A project by Maximilian Schell.</div>

@@ -221,27 +221,22 @@ a:focus-visible,
   align-self: start;
 }
 
+/* Der Geraeterahmen steckt im Bild selbst (App-Store-Framer-Export);
+   der border-radius schneidet nur die Hintergrund-Reste in den Ecken weg. */
 .phone {
   grid-column: 2;
   grid-row: 1 / span 2;
   align-self: center;
   width: 345px;
-  height: 620px;
-  border-radius: 44px;
-  border: 1px solid var(--stroke);
-  box-shadow: 0 24px 60px rgba(20, 22, 26, 0.14);
-  background: var(--surface);
-  padding: 12px;
   margin-left: auto;
 }
 
 .shot {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 34px;
-  background-color: #eef1f6;
+  height: auto;
+  border-radius: 42px;
+  box-shadow: 0 24px 60px rgba(20, 22, 26, 0.14);
 }
 
 .eyebrow {
@@ -312,10 +307,9 @@ h1 {
   text-wrap: balance;
 }
 
-/* ---------- Drei Schritte, interaktiv ----------
-   Links die Schritte als Buttons, rechts zeigt das Telefon den passenden
-   Screen. demo.js schaltet um und laesst die Schritte automatisch
-   durchlaufen, bis der Nutzer selbst klickt. */
+/* ---------- Drei Schritte mit Video-Demo ----------
+   Links die Schritte zum Mitlesen, rechts laeuft die Bildschirmaufnahme
+   des kompletten Ablaufs als stummer Loop einfach durch. */
 
 .demo {
   display: grid;
@@ -332,36 +326,11 @@ h1 {
 }
 
 .step {
-  appearance: none;
-  background: none;
-  border: 0;
-  border-top: 1px solid var(--stroke);
-  border-radius: 0;
-  font: inherit;
-  color: inherit;
-  text-align: left;
-  cursor: pointer;
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding: 20px 0 0;
-  opacity: 0.55;
-  transition: opacity 0.3s ease, border-top-color 0.3s ease;
-}
-
-.step:hover {
-  opacity: 0.85;
-}
-
-.step.is-active {
-  opacity: 1;
-  border-top-color: var(--accent);
-}
-
-.step:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 6px;
-  border-radius: 6px;
+  padding-top: 20px;
+  border-top: 1px solid var(--stroke);
 }
 
 .step-num {
@@ -371,12 +340,14 @@ h1 {
   letter-spacing: 0.08em;
 }
 
-.step-title {
+.step h3 {
+  margin: 0;
   font-size: 20px;
   font-weight: 500;
 }
 
-.step-text {
+.step p {
+  margin: 0;
   font-size: 15px;
   line-height: 1.65;
   color: var(--ink-2);
@@ -386,7 +357,6 @@ h1 {
 
 .demo-phone {
   width: 345px;
-  height: 620px;
   border-radius: 44px;
   border: 1px solid var(--stroke);
   box-shadow: 0 24px 60px rgba(20, 22, 26, 0.14);
@@ -395,49 +365,12 @@ h1 {
   margin-left: auto;
 }
 
-.demo-screen {
-  position: relative;
+.demo-video {
+  display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
   border-radius: 34px;
-  overflow: hidden;
-  background-color: #dfe4ec;
-}
-
-.demo-slide {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 0.45s ease;
-}
-
-.demo-slide.is-active {
-  opacity: 1;
-}
-
-/* Schritt 1 hat noch kein Original-Foto: gestreifter Platzhalter statt
-   kaputtem Bildsymbol, gleiche Idee wie frueher bei demo-foto.jpg. */
-.demo-slide-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: repeating-linear-gradient(
-    135deg,
-    rgba(20, 22, 26, 0.05) 0px,
-    rgba(20, 22, 26, 0.05) 1px,
-    transparent 1px,
-    transparent 9px
-  );
-}
-
-.demo-hint {
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 11px;
-  letter-spacing: 0.04em;
-  color: var(--ink-3);
+  background-color: #14161a;
 }
 
 /* ---------- Funktionen ---------- */
@@ -629,7 +562,10 @@ h1 {
     order: 2;
     margin: 0 auto;
     width: 290px;
-    height: 517px;
+  }
+
+  .shot {
+    border-radius: 36px;
   }
 
   .hero-extra {
@@ -639,7 +575,6 @@ h1 {
   .demo-phone {
     margin: 0 auto;
     width: 290px;
-    height: 517px;
   }
 
   .lede {
