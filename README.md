@@ -29,7 +29,12 @@ Layout baut daraus den Link auf die andere Sprache. Die Landing Pages verlinken 
   müssen beim Ausliefern mitgehen.
 - `assets/css/site.css` - Farben und Abstände spiegeln das "Quiet Studio"-Theme der App
   (`AppTheme` in `potd/ModernDesign.swift`).
-- `assets/img/app-hauptbildschirm.jpg` - Screenshot für den Hero.
+- `assets/img/hero-de.jpg` / `hero-en.jpg` - Hauptbildschirm-Screenshots für Hero und
+  Schritt 3 der Demo; `vorlagen-de.jpg` / `templates-en.jpg` - Vorlagen-Liste für Schritt 2.
+  Quelle: `~/personal/apps/potd_images/` (mit `sips` auf 760px verkleinert, Statusleiste
+  abgeschnitten).
+- `assets/js/demo.js` - schaltet die Drei-Schritte-Demo (Klick auf einen Schritt zeigt den
+  passenden Screen, Auto-Durchlauf bis zum ersten Klick).
 
 ## Offene Punkte
 
@@ -38,9 +43,11 @@ Layout baut daraus den Link auf die andere Sprache. Die Landing Pages verlinken 
       Alle vier Dateien gleichzeitig anfassen.
 - [ ] **App-Store-Link** setzen: in `index.html` und `en/index.html` zeigen drei `href="#"` auf
       nichts (Nav-Button, Hero-Button, Abschluss-Button).
-- [ ] `assets/img/demo-foto.jpg` ergänzen - ein unbeschriftetes Reisefoto im Hochformat als
-      Hintergrund der Schritt-Animation. Fehlt die Datei, bleibt ein gestreifter Platzhalter
-      stehen, die Seite bleibt heil.
+- [ ] **Original-Foto für Schritt 1** der Demo ergänzen (das Eibsee-Foto unbeschriftet, DE und
+      EN identisch) - bis dahin zeigt Schritt 1 einen gestreiften Platzhalter, die Seite bleibt
+      heil.
+- [ ] **Bildschirmaufnahme** des kompletten Ablaufs (Foto wählen → Vorlage → Sichern) als
+      loopendes `<video>` in die Demo-Sektion einbauen, sobald die Aufnahme vorliegt.
 
 ## Herkunft
 

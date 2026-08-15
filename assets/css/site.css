@@ -312,7 +312,10 @@ h1 {
   text-wrap: balance;
 }
 
-/* ---------- Drei Schritte mit animierter Demo ---------- */
+/* ---------- Drei Schritte, interaktiv ----------
+   Links die Schritte als Buttons, rechts zeigt das Telefon den passenden
+   Screen. demo.js schaltet um und laesst die Schritte automatisch
+   durchlaufen, bis der Nutzer selbst klickt. */
 
 .demo {
   display: grid;
@@ -329,11 +332,36 @@ h1 {
 }
 
 .step {
+  appearance: none;
+  background: none;
+  border: 0;
+  border-top: 1px solid var(--stroke);
+  border-radius: 0;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding-top: 20px;
-  border-top: 1px solid var(--stroke);
+  padding: 20px 0 0;
+  opacity: 0.55;
+  transition: opacity 0.3s ease, border-top-color 0.3s ease;
+}
+
+.step:hover {
+  opacity: 0.85;
+}
+
+.step.is-active {
+  opacity: 1;
+  border-top-color: var(--accent);
+}
+
+.step:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 6px;
+  border-radius: 6px;
 }
 
 .step-num {
@@ -343,14 +371,12 @@ h1 {
   letter-spacing: 0.08em;
 }
 
-.step h3 {
-  margin: 0;
+.step-title {
   font-size: 20px;
   font-weight: 500;
 }
 
-.step p {
-  margin: 0;
+.step-text {
   font-size: 15px;
   line-height: 1.65;
   color: var(--ink-2);
@@ -369,8 +395,6 @@ h1 {
   margin-left: auto;
 }
 
-/* Fehlt demo-foto.jpg, bleibt der gestreifte Platzhalter stehen -
-   kein kaputtes Bildsymbol. */
 .demo-screen {
   position: relative;
   width: 100%;
@@ -378,157 +402,42 @@ h1 {
   border-radius: 34px;
   overflow: hidden;
   background-color: #dfe4ec;
-  background-image: url("../img/demo-foto.jpg"),
-    repeating-linear-gradient(
-      135deg,
-      rgba(20, 22, 26, 0.05) 0px,
-      rgba(20, 22, 26, 0.05) 1px,
-      transparent 1px,
-      transparent 9px
-    );
-  background-size: cover, auto;
-  background-position: center, 0 0;
 }
 
-/* Sorgt dafuer, dass der weisse Overlay-Text auf jedem Foto lesbar bleibt -
-   dasselbe Prinzip wie die Backdrop-Platte in der App. */
-.demo-screen::after {
-  content: "";
+.demo-slide {
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 60%;
-  background: linear-gradient(to top, rgba(16, 18, 22, 0.82), rgba(16, 18, 22, 0));
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.45s ease;
 }
 
-.demo-hint {
-  position: absolute;
-  z-index: 2;
-  top: 18px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 10px;
-  letter-spacing: 0.04em;
-  color: var(--ink-3);
+.demo-slide.is-active {
+  opacity: 1;
 }
 
-.demo-caption {
-  position: absolute;
-  z-index: 2;
-  left: 26px;
-  right: 26px;
-  bottom: 96px;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.demo-line {
-  font-family: "Caveat", "Bradley Hand", cursive;
-  font-size: 26px;
-  line-height: 1.3;
-  color: #fff;
-}
-
-.demo-toast {
-  position: absolute;
-  z-index: 2;
-  left: 26px;
-  right: 26px;
-  bottom: 28px;
+/* Schritt 1 hat noch kein Original-Foto: gestreifter Platzhalter statt
+   kaputtem Bildsymbol, gleiche Idee wie frueher bei demo-foto.jpg. */
+.demo-slide-placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 16px;
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.92);
-  color: var(--ink);
-  font-size: 13px;
-  font-weight: 600;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(20, 22, 26, 0.05) 0px,
+    rgba(20, 22, 26, 0.05) 1px,
+    transparent 1px,
+    transparent 9px
+  );
 }
 
-/* Sichtbarer Endzustand ist die Basis, animiert wird nur, wenn der Nutzer
-   Bewegung nicht reduziert hat. */
-@media (prefers-reduced-motion: no-preference) {
-  .demo-line {
-    animation: lineIn 11s ease-in-out infinite;
-  }
-
-  .demo-line:nth-child(2) {
-    animation-delay: 0.7s;
-  }
-
-  .demo-line:nth-child(3) {
-    animation-delay: 1.4s;
-  }
-
-  .demo-toast {
-    animation: toastIn 11s ease-in-out infinite;
-  }
-
-  .step {
-    opacity: 0.5;
-    transition: opacity 0.4s ease;
-    animation: stepOn 11s ease-in-out infinite;
-  }
-
-  .step:nth-child(2) {
-    animation-delay: 3.6s;
-  }
-
-  .step:nth-child(3) {
-    animation-delay: 7.2s;
-  }
-}
-
-@keyframes lineIn {
-  0%,
-  14% {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  24%,
-  88% {
-    opacity: 1;
-    transform: none;
-  }
-  95%,
-  100% {
-    opacity: 0;
-    transform: none;
-  }
-}
-
-@keyframes toastIn {
-  0%,
-  62% {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  70%,
-  86% {
-    opacity: 1;
-    transform: none;
-  }
-  93%,
-  100% {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-}
-
-@keyframes stepOn {
-  0%,
-  26% {
-    opacity: 1;
-  }
-  34%,
-  100% {
-    opacity: 0.5;
-  }
+.demo-hint {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--ink-3);
 }
 
 /* ---------- Funktionen ---------- */

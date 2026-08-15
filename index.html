@@ -13,7 +13,7 @@
 <meta property="og:title" content="Pic of the Day - Fotos, die sich selbst beschriften">
 <meta property="og:description" content="Ort, Datum, Wetter und Höhe aus den Metadaten deines Fotos, als gestalteter Text ins Bild. Kostenlos, ohne Konto, ohne Upload.">
 <meta property="og:url" content="https://stillmadmax.github.io/potd-site/">
-<meta property="og:image" content="https://stillmadmax.github.io/potd-site/assets/img/app-hauptbildschirm.jpg">
+<meta property="og:image" content="https://stillmadmax.github.io/potd-site/assets/img/hero-de.jpg">
 <meta property="og:locale" content="de_DE">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="assets/css/fonts.css">
@@ -49,15 +49,15 @@
     </p>
   </div>
   <div class="phone">
-    <img class="shot" src="assets/img/app-hauptbildschirm.jpg" width="755" height="1400"
-         alt="POTD Hauptbildschirm: ein Foto aus Antwerpen, beschriftet mit Ort, Datum, Temperatur und Höhe">
+    <img class="shot" src="assets/img/hero-de.jpg" width="760" height="1557"
+         alt="POTD Hauptbildschirm: ein Bergsee-Foto, beschriftet mit Gipfel, Höhe, Datum und Wetter">
   </div>
   <div class="hero-extra">
     <div class="sample">
       <p class="sample-label">So landet der Text im Bild</p>
-      <span class="sample-line">Antwerpen, BE</span>
-      <span class="sample-line">12. Mai 2026, 10 °C,</span>
-      <span class="sample-line">6 m üNN, leichter Nieselregen</span>
+      <span class="sample-line">Zirmerskopf (DE), 987 m üNN</span>
+      <span class="sample-line">28. Juli 2026, 12:03 Uhr,</span>
+      <span class="sample-line">22 °C, überwiegend klar</span>
     </div>
     <div class="cta-row">
       <a class="btn" href="#">Im App Store laden</a>
@@ -70,35 +70,36 @@
 </header>
 
 <section class="wrap">
-  <h2 class="serif section-head">Drei Schritte, dann ist das Bild fertig.</h2>
+  <h2 class="serif section-head">In fünf Sekunden zu deinem Bild.</h2>
   <div class="demo">
     <div class="steps">
-      <div class="step">
-        <p class="step-num">01</p>
-        <h3 class="serif">Foto wählen</h3>
-        <p>Aus der Mediathek oder direkt in der App aufgenommen.</p>
-      </div>
-      <div class="step">
-        <p class="step-num">02</p>
-        <h3 class="serif">Vorlage wählen</h3>
-        <p>Die App liest die Metadaten des Fotos und füllt Ort, Datum und Wetter selbständig ein.</p>
-      </div>
-      <div class="step">
-        <p class="step-num">03</p>
-        <h3 class="serif">Sichern</h3>
-        <p>Das beschriftete Bild landet als neues Foto in deiner Mediathek.</p>
-      </div>
+      <button class="step" type="button" data-step="1">
+        <span class="step-num">01</span>
+        <span class="step-title serif">Foto wählen</span>
+        <span class="step-text">Aus der Mediathek oder direkt in der App aufgenommen.</span>
+      </button>
+      <button class="step" type="button" data-step="2">
+        <span class="step-num">02</span>
+        <span class="step-title serif">Vorlage wählen</span>
+        <span class="step-text">Die App liest die Metadaten des Fotos und füllt Ort, Datum und Wetter selbständig ein.</span>
+      </button>
+      <button class="step is-active" type="button" data-step="3" aria-current="true">
+        <span class="step-num">03</span>
+        <span class="step-title serif">Sichern</span>
+        <span class="step-text">Das beschriftete Bild landet als neues Foto in deiner Mediathek.</span>
+      </button>
     </div>
-    <div class="demo-phone" role="img"
-         aria-label="Animation: ein Foto wird nacheinander mit Ort, Datum und Wetter beschriftet und anschließend als neues Foto gesichert.">
+    <div class="demo-phone">
       <div class="demo-screen">
-        <span class="demo-hint">dein Foto</span>
-        <div class="demo-caption">
-          <span class="demo-line">Antwerpen, BE</span>
-          <span class="demo-line">12. Mai 2026, 10 °C,</span>
-          <span class="demo-line">6 m üNN, leichter Nieselregen</span>
+        <div class="demo-slide demo-slide-placeholder" data-step="1" aria-hidden="true">
+          <span class="demo-hint">dein Foto</span>
         </div>
-        <div class="demo-toast">Als neues Foto gesichert</div>
+        <img class="demo-slide" data-step="2" src="assets/img/vorlagen-de.jpg"
+             width="760" height="1557" aria-hidden="true"
+             alt="Vorlagen-Liste der App: Minimal, Wanderung und Ereignis, jede mit Platzhaltern wie {peak} und {date}">
+        <img class="demo-slide is-active" data-step="3" src="assets/img/hero-de.jpg"
+             width="760" height="1557"
+             alt="Fertig beschriftetes Bergsee-Foto auf dem Hauptbildschirm, bereit zum Sichern">
       </div>
     </div>
   </div>
@@ -173,6 +174,8 @@
 </section>
 
 </main>
+
+<script src="assets/js/demo.js" defer></script>
 
 <footer class="wrap foot">
   <div>Pic of the Day. Ein Projekt von Maximilian Schell.</div>
