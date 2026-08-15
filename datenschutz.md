@@ -7,7 +7,7 @@ alt_label: English
 
 # Datenschutzerklärung für POTD (Pic of the Day)
 
-Stand: 8. August 2026
+Stand: 15. August 2026
 
 ## Verantwortlich
 
