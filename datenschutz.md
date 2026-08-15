@@ -11,19 +11,13 @@ Stand: 8. August 2026
 
 ## Verantwortlich
 
-<!-- AUSFÜLLEN vor der Veröffentlichung. Anschrift erst nach der anwaltlichen Klärung
-     eintragen (Postfach / c-o / Impressumsservice als Alternative zur Wohnanschrift).
-     E-Mail: die eigens angelegte, projektbezogene Adresse - nicht die private Hauptadresse. -->
-
 <address>
-Max Mustermann<br>
-Musterstraße 1<br>
-12345 Musterstadt
+Maximilian Schell<br>
+%%KONTAKT_ADRESSE%%
 </address>
 
 E-Mail: potd.picoftheday@gmail.com
 
-*(Platzhalter - vor der Veröffentlichung durch die echten Angaben ersetzen.)*
 
 Ein Datenschutzbeauftragter ist nicht bestellt; dazu besteht keine gesetzliche Verpflichtung. Wende
 dich mit allen Datenschutzanliegen bitte an die oben genannte Kontaktadresse.

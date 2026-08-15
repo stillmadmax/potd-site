@@ -9,30 +9,20 @@ alt_label: English
 
 ## Angaben gemäß § 5 DDG
 
-<!-- AUSFÜLLEN vor der Veröffentlichung. Dieselben Angaben wie in der Datenschutzerklärung
-     ("Verantwortlich") - Anschrift erst nach der anwaltlichen Klärung eintragen
-     (Postfach / c-o / Impressumsservice als Alternative zur Wohnanschrift).
-     E-Mail: die eigens angelegte, projektbezogene Adresse - nicht die private Hauptadresse. -->
-
 <address>
-Max Mustermann<br>
-Musterstraße 1<br>
-12345 Musterstadt
+Maximilian Schell<br>
+%%KONTAKT_ADRESSE%%
 </address>
 
 E-Mail: potd.picoftheday@gmail.com
 
-*(Platzhalter - vor der Veröffentlichung durch die echten Angaben ersetzen.)*
-
 ## Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
 
 <address>
-Max Mustermann<br>
-Musterstraße 1<br>
-12345 Musterstadt
+Maximilian Schell<br>
+%%KONTAKT_ADRESSE%%
 </address>
 
-*(Platzhalter - vor der Veröffentlichung durch die echten Angaben ersetzen.)*
 
 ## Kontakt
 

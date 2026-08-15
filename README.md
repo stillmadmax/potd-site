@@ -50,10 +50,6 @@ Layout baut daraus den Link auf die andere Sprache. Die Landing Pages verlinken 
 
 ## Offene Punkte
 
-- [ ] **Echte Kontaktdaten** in `impressum.md`, `en/imprint.md`, `datenschutz.md` und
-      `en/privacy.md` eintragen - Name/Anschrift sind noch "Max Mustermann"-Platzhalter.
-      Alle vier Dateien gleichzeitig anfassen. Die E-Mail-Adresse ist bereits echt
-      (potd.picoftheday@gmail.com, auch auf den Support-Seiten).
 - [ ] **App-Store-Link verifizieren**: `id6780421556` ist in beiden Landing Pages verlinkt
       (DE mit `/de/`, EN mit `/us/`), gab aber vor dem Release noch 404 - nach der
       App-Freigabe einmal klicken und prüfen.
