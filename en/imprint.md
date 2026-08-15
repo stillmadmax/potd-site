@@ -12,29 +12,22 @@ binding one; in case of any discrepancy, the German text prevails.*
 
 ## Information pursuant to Sec. 5 DDG
 
-<!-- AUSFÜLLEN vor der Veröffentlichung - identisch zur deutschen Fassung halten. -->
-
 <address>
-Max Mustermann<br>
-Musterstraße 1<br>
-12345 Musterstadt<br>
+Maximilian Schell<br>
+%%KONTAKT_ADRESSE%%<br>
 Germany
 </address>
 
 Email: potd.picoftheday@gmail.com
 
-*(Placeholder - to be replaced with the real details before publication.)*
-
 ## Responsible for the content pursuant to Sec. 18(2) MStV
 
 <address>
-Max Mustermann<br>
-Musterstraße 1<br>
-12345 Musterstadt<br>
+Maximilian Schell<br>
+%%KONTAKT_ADRESSE%%<br>
 Germany
 </address>
 
-*(Placeholder - to be replaced with the real details before publication.)*
 
 ## Contact
 

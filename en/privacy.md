@@ -14,18 +14,14 @@ one; in case of any discrepancy, the German text prevails.*
 
 ## Controller
 
-<!-- AUSFÜLLEN vor der Veröffentlichung - identisch zur deutschen Fassung halten. -->
-
 <address>
-Max Mustermann<br>
-Musterstraße 1<br>
-12345 Musterstadt<br>
+Maximilian Schell<br>
+%%KONTAKT_ADRESSE%%<br>
 Germany
 </address>
 
 Email: potd.picoftheday@gmail.com
 
-*(Placeholder - to be replaced with the real details before publication.)*
 
 No data protection officer has been appointed; there is no legal obligation to do so. Please direct
 all data protection matters to the contact address above.
