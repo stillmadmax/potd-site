@@ -64,6 +64,16 @@ divergiert mit jeder Änderung hier weiter.
 Vorgänger-Repo `stillmadmax/potd-privacy` (nur Datenschutz, Support, Impressum) ist am
 2026-08-09 hier aufgegangen und gelöscht worden; die alten URLs sind bewusst tot.
 
+## Kontaktadresse (bewusst nicht im Repo)
+
+In `datenschutz.md`, `impressum.md`, `en/privacy.md` und `en/imprint.md` steht der Platzhalter
+`%%KONTAKT_ADRESSE%%`. Der Pages-Workflow (`.github/workflows/pages.yml`) ersetzt ihn beim
+Deploy durch das Repository-Secret **`KONTAKT_ADRESSE`** (Format: `Straße Nr<br>PLZ Ort`).
+So steht die Anschrift nur im Secret und auf der gerenderten Seite, nicht im öffentlichen
+Repo oder seiner Historie. Bei einer Adressänderung: nur das Secret ändern und den Workflow
+neu laufen lassen ("Run workflow"); liegt die neue Adresse außerhalb Bayerns, zusätzlich die
+Aufsichtsbehörde im Abschnitt "Beschwerderecht" anpassen.
+
 ## Lokal ansehen
 
 Die Landing Pages laufen ohne Buildschritt, `index.html` im Browser öffnen genügt. Für die
